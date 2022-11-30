@@ -90,9 +90,13 @@ h1 {
 .pizza .cont{ /* padre de img y h3 */
   width: 100%;
   height: auto;
-  border-radius: 50%;
-  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  
   margin: 15px;
+  margin-bottom: 23px;
+  justify-content: center;
+  
 }
 /* responsive de pizza cont */
 @media (max-width: 599px) {
