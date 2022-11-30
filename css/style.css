@@ -33,9 +33,10 @@ h1 {
   justify-content: center;
 }
 
-.container img {
-  width: 250px;
-  height: 200px;
+.container .logo {
+  width: 350px;
+  height: 250px;
+  margin-bottom: 30px;/* margen de abajo del logo hacia la palabra categorias */
 }
 
 /*Parametros del logo responsive para celular*/
@@ -44,23 +45,16 @@ h1 {
     display: flex;
     justify-content: center;
   }
-
-  .container img {
-    width: 300px;
-    height: 250px;
-  }
 }
 
 /*titulo*/
 .titulo {
   text-align: center;
   color: white;
+  margin-bottom: 30px;
+  
 }
 
-.grid-layout {
-  width: 80%;
-  margin: 0 auto;
-}
 /* comienzo del menu */
 .container {/* padre de todo el menu */
   display: flex;
@@ -84,40 +78,36 @@ h1 {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   background-color: transparent;
+  margin: 15px;
 }
 /* reasponsive de pizza */
 @media (max-width: 599px) {
   .pizza{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    background-color: transparent;
+
+    
   }
 }
 .pizza .cont{ /* padre de img y h3 */
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: auto;
   border-radius: 50%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  margin: 15px;
 }
 /* responsive de pizza cont */
 @media (max-width: 599px) {
   .pizza .cont{ /* padre de img y h3 */
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 1px solid white;
+
   }
-  
 }
-.pizza .cont img{
-  width: 100px;
-  height: 100px;
-  align-items: center;
+.pizza .cont img{/* dimenciones de imagenes de categoria */
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px ;
+
+
 }
-.pizza .cont h3{
+.pizza .cont h3{/* dimenciones de titulo de cada categoria */
   color: white;
   text-align: center;
 }
