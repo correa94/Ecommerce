@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;1,400&family=Signika+Negative:wght@300&display=swap");
-
 body {
   font-family: "Poppins", sans-serif;
   background-image: url(../img/fondo/via\ veneto\ 3-min-min.png);
@@ -7,56 +6,51 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-@media (max-width: 500px) {
+@media (max-width: 500px) {/* body responsive */
   body {
     width: 100%;
     height: 500px;
     background-repeat: repeat;
   }
 }
-
-* {
+* { /* globales */
   margin: 0;
   box-sizing: border-box;
 }
-
-h1 {
+h1 { /* h1 llama a general */
   font-size: 2em;
   margin: 0;
 }
-
 /*Parametros de logo*/
-
-.container {
+.containerr { /* agrego una R de mas a la clase esta asi no se llama igual que a la de abajo linea 15 */
   display: flex;
   justify-content: center;
 }
-
-.container .logo {
-  width: 350px;
-  height: 250px;
-  margin-bottom: 30px;/* margen de abajo del logo hacia la palabra categorias */
+.containerr .logo {/* cuestion de logo */
+  width: 450px;
+  height: 300px;
+  margin-bottom: 30px;
+  /* margen de abajo del logo hacia la palabra categorias */
 }
-
 /*Parametros del logo responsive para celular*/
 @media (max-width: 467px) {
-  .container {
-    display: flex;
-    justify-content: center;
+  .containerr .logo {
+    width: 250px;
+    height: 150px;
+    margin-bottom: 30px;
+    /* margen de abajo del logo hacia la palabra categorias */
   }
 }
-
 /*titulo*/
 .titulo {
   text-align: center;
   color: white;
   margin-bottom: 30px;
-  
+  opacity: 0.7;
 }
-
 /* comienzo del menu */
-.container {/* padre de todo el menu */
+.container {
+  /* padre de todo el menu */
   display: flex;
   justify-content: center;
   width: 100%;
@@ -64,14 +58,15 @@ h1 {
 }
 /* responsive de container */
 @media (max-width:599px) {
-  .container{
+  .container {
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
   }
 }
-.pizza {/* padre de todos los items  */
+.pizza {
+  /* padre de todos los items  */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -82,36 +77,61 @@ h1 {
 }
 /* reasponsive de pizza */
 @media (max-width: 599px) {
-  .pizza{
-
-    
+  .pizza {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: transparent;
+    margin: 15px;
   }
 }
-.pizza .cont{ /* padre de img y h3 */
+.pizza .cont {
+  /* padre de img y h3 */
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  
   margin: 15px;
   margin-bottom: 23px;
   justify-content: center;
-  
 }
 /* responsive de pizza cont */
 @media (max-width: 599px) {
-  .pizza .cont{ /* padre de img y h3 */
-
+  .pizza .cont {
+    /* padre de img y h3 */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 23px;
+    justify-content: center;
   }
 }
-.pizza .cont img{/* dimenciones de imagenes de categoria */
+.pizza .cont img {
+  /* dimenciones de imagenes de categoria */
   width: 200px;
   height: 200px;
-  margin-bottom: 10px ;
-
-
+  margin-bottom: 10px;
 }
-.pizza .cont h3{/* dimenciones de titulo de cada categoria */
+.pizza .cont h3 {
+  /* dimenciones de titulo de cada categoria */
   color: white;
   text-align: center;
+}
+@media (max-width:599px) {
+
+  /* responsive de imagen y h3 */
+  .pizza .cont img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .pizza .cont h3 {
+    color: white;
+    font-size: 13px;
+  }
 }
