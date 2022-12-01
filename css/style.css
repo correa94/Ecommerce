@@ -25,7 +25,35 @@ h1 {
   font-size: 2em;
   margin: 0;
 }
+button {
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+}
+/*logo*/
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
 
+.logo img {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+}
+/*adaptacion para celular*/
+@media (max-width: 500px) {
+  .logo img {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+  }
+}
 /*Parametros de logo*/
 
 .container {
@@ -55,6 +83,7 @@ h1 {
 .titulo {
   text-align: center;
   color: white;
+  opacity: 0.7;
 }
 
 .grid-layout {
@@ -62,22 +91,24 @@ h1 {
   margin: 0 auto;
 }
 /* comienzo del menu */
-.container {/* padre de todo el menu */
+.container {
+  /* padre de todo el menu */
   display: flex;
   justify-content: center;
   width: 100%;
   height: auto;
 }
 /* responsive de container */
-@media (max-width:599px) {
-  .container{
+@media (max-width: 599px) {
+  .container {
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
   }
 }
-.pizza {/* padre de todos los items  */
+.pizza {
+  /* padre de todos los items  */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -87,7 +118,7 @@ h1 {
 }
 /* reasponsive de pizza */
 @media (max-width: 599px) {
-  .pizza{
+  .pizza {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -96,28 +127,102 @@ h1 {
     background-color: transparent;
   }
 }
-.pizza .cont{ /* padre de img y h3 */
+.pizza .cont {
+  /* padre de img y h3 */
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 1px solid white;
+  margin: 20px;
 }
 /* responsive de pizza cont */
 @media (max-width: 599px) {
-  .pizza .cont{ /* padre de img y h3 */
+  .pizza .cont {
+    /* padre de img y h3 */
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 1px solid white;
   }
-  
 }
-.pizza .cont img{
-  width: 100px;
-  height: 100px;
+.pizza .cont img {
+  width: 140px;
+  height: 130px;
   align-items: center;
 }
-.pizza .cont h3{
+.pizza .cont h3 {
   color: white;
   text-align: center;
+  height: 80px;
+}
+.padre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.padre2 {
+  width: 50%;
+  height: 400px;
+}
+@media (max-width:467px) {
+    .padre2{
+        width: 100%;
+        height: auto;
+    }
+}
+.padre2 .contenido {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0;
+}
+@media (max-width: 467px){
+    .padre2 .contenido {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 13px;
+        grid-row-gap: 13px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 15px 0;
+      } 
+}
+.padre2 .contenido .contenido-2 {
+  display: flex;
+  justify-content: center;
+}
+.padre2 .contenido img {
+  width: 150px;
+  height: 100px;
+}
+
+.padre2 .contenido h3 {
+  color: white;
+  font-size: 15px;
+}
+
+.padre2 .contenido h3 span p{
+    font-weight: 100;
+}
+
+.padre .contenido p {
+  color: white;
+}
+
+@media (max-width: 467px) {
+  .padre2 .contenido img {
+    width: 100px;
+    height: 80px;
+  }
+  .padre2 .contenido h3 {
+    color: white;
+    font-size: 10px;
+  }
 }
