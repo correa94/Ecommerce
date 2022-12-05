@@ -25,6 +25,7 @@ h1 {
   font-size: 2em;
   margin: 0;
 }
+
 button {
   width: 100px;
   height: 100px;
@@ -33,6 +34,7 @@ button {
   color: black;
   border-radius: 50px;
 }
+
 /*logo*/
 .logo {
   display: flex;
@@ -46,6 +48,7 @@ button {
   height: 300px;
   margin: auto;
 }
+
 /*adaptacion para celular*/
 @media (max-width: 500px) {
   .logo img {
@@ -54,6 +57,7 @@ button {
     margin: auto;
   }
 }
+
 /*Parametros de logo*/
 
 .container {
@@ -90,6 +94,7 @@ button {
   width: 80%;
   margin: 0 auto;
 }
+
 /* comienzo del menu */
 .container {
   /* padre de todo el menu */
@@ -98,6 +103,7 @@ button {
   width: 100%;
   height: auto;
 }
+
 /* responsive de container */
 @media (max-width: 599px) {
   .container {
@@ -107,6 +113,7 @@ button {
     height: auto;
   }
 }
+
 .pizza {
   /* padre de todos los items  */
   display: grid;
@@ -116,6 +123,7 @@ button {
   grid-row-gap: 0px;
   background-color: transparent;
 }
+
 /* reasponsive de pizza */
 @media (max-width: 599px) {
   .pizza {
@@ -125,34 +133,62 @@ button {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     background-color: transparent;
+
   }
 }
+
 .pizza .cont {
   /* padre de img y h3 */
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 200px;
+  height: 200px;
   margin: 20px;
+  margin-top: 20px;
+  background-image: url(../img/fondo.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height:normal;
+  
 }
+
 /* responsive de pizza cont */
 @media (max-width: 599px) {
   .pizza .cont {
-    /* padre de img y h3 */
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    background-image: url(../img/fondo.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height:normal;
   }
 }
+
 .pizza .cont img {
-  width: 140px;
-  height: 130px;
-  align-items: center;
+  margin-top: 20px;
+  width: 120px;
+  height: 120px;
+
 }
+@media (max-width:467px) {
+  .pizza .cont img{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .pizza .cont h3 {
   color: white;
   text-align: center;
-  height: 80px;
 }
+
 .padre {
   width: 100%;
   display: flex;
@@ -169,6 +205,7 @@ button {
     height: auto;
   }
 }
+
 .padre2 .contenido {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -194,10 +231,12 @@ button {
     margin: 15px 0;
   }
 }
+
 .padre2 .contenido .contenido-2 {
   display: flex;
   justify-content: center;
 }
+
 .padre2 .contenido img {
   width: 150px;
   height: 100px;
@@ -221,6 +260,7 @@ button {
     width: 100px;
     height: 80px;
   }
+
   .padre2 .contenido h3 {
     color: white;
     font-size: 10px;
