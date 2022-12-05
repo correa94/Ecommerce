@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curso CSS</title>
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="shortcut icon" href="./img/favico/favicon.png" type="favicon" />
-  <link rel="stylesheet" href="./css/normalize.css" />
-</head>
-<header>
-  <!--Logo-->
-  <div class="logo">
-    <img src="./img/logo/nameC-min.png" alt="logo-via-veneto" />
-  </div>
-</header>
-<!--                    ¡¡¡LEER!!!
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso CSS</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/favico/favicon.png" type="favicon" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <header>
+    <!--Logo-->
+    <div class="logo">
+      <img src="./img/logo/nameC-min.png" alt="logo-via-veneto" />
+    </div>
+  </header>
+  <!--                    ¡¡¡LEER!!!
   **************NOTAS***************
 
-
--Agregarle un fondo a cada imagen de cada categoria
--Hacer que cada categoria tenga una pagina aparte donde muestre lo que tenga esa categoria
 
 
 ******DOCUIMENTAR TODO EL CODIGO********
@@ -29,46 +31,88 @@
 ******SER ORDENADO Y HACERLO CON CABEZA********
 
 -->
-<body>
-  <!--titulo-->
-  <div class="titulo">
-    <h1>CATEGORIAS</h1><!-- le puse opacidad a la letra del encabezado -->
-  </div>
-  <div class="container"><!-- contenedor que contiene todo el menu display flex -->
-    <div class="pizza"><!-- posicion display grid -->
-      <!-- item 1 -->
-      <div class="cont"><!-- contenedor de cada foto -->
-        <a href="./html/pizza.html"><img src="./img/pizza/580b57fcd9996e24bc43c1e0.png" alt=""></a>
-        
-        <h3>Pizzas</h3><!-- titulo de cada fot -->
-      </div>
-      <!-- item 2 -->
-      <div class="cont"><!-- contenedor de cada foto -->
-        <a href="./html/promociones.html"><img src="./img/pizza/580b57fcd9996e24bc43c1e0.png" alt=""></a>
-        <h3>Promociones</h3><!-- titulo de cada fot -->
-      </div>
-      <!-- item 3 -->
-      <div class="cont"><!-- contenedor de cada foto -->
-        <a href="./html/cafeteria.html"><img src="./img/pizza/580b57fcd9996e24bc43c1e0.png" alt=""></a>
-        <h3>cafeteria</h3><!-- titulo de cada fot -->
-      </div>
-      <!-- item 4 -->
-      <div class="cont"><!-- contenedor de cada foto -->
-        <a href="./html/panaderia.html"><img src="./img/pizza/580b57fcd9996e24bc43c1e0.png" alt=""></a>
-        <h3>Panaderia</h3><!-- titulo de cada fot -->
-      </div>
-      <!-- item 5 -->
-      <div class="cont"><!-- contenedor de cada foto -->
-        <a href="./html/menu.html"><img src="./img/pizza/580b57fcd9996e24bc43c1e0.png" alt=""></a>
-        <h3>menú</h3><!-- titulo de cada fot -->
-      </div>
-      <!-- item 6 -->
-      <div class="cont"><!-- contenedor de cada foto -->
-        <a href="./html/entradas.html"><img src="./img/pizza/580b57fcd9996e24bc43c1e0.png" alt=""></a>
-        <h3>Entradas</h3><!-- titulo de cada fot -->
+  <body>
+    <!--titulo-->
+    <div class="titulo">
+      <h1>CATEGORIAS</h1>
+      <!-- le puse opacidad a la letra del encabezado -->
+    </div>
+    <div class="container">
+      <!-- contenedor que contiene todo el menu display flex -->
+      <div class="pizza">
+        <!-- posicion display grid -->
+        <!-- item 1 -->
+        <div class="cont">
+          <!-- contenedor de cada foto -->
+          <a href="./html/pizza.html"
+            ><img src="./img/img pizzas.webp" alt=""
+          /></a>
+          <h3>Pizzas</h3>
+          <!-- titulo de cada fot -->
+        </div>
+        <!-- item 2 -->
+        <div class="cont">
+          <!-- contenedor de cada foto -->
+          <a href="./html/promociones.html"
+            ><img src="./img/pizza/580b57fcd9996e24bc43c1e0.png" alt=""
+          /></a>
+          <h3>Promociones</h3>
+          <!-- titulo de cada fot -->
+        </div>
+        <!-- item 3 -->
+        <div class="cont">
+          <!-- contenedor de cada foto -->
+          <a href="./html/cafeteria.html"
+            ><img src="./img/pizza/580b57fcd9996e24bc43c1e0.png" alt=""
+          /></a>
+          <h3>cafeteria</h3>
+          <!-- titulo de cada fot -->
+        </div>
+        <!-- item 4 -->
+        <div class="cont">
+          <!-- contenedor de cada foto -->
+          <a href="./html/panaderia.html"
+            ><img src="./img/pizza/580b57fcd9996e24bc43c1e0.png" alt=""
+          /></a>
+          <h3>Panaderia</h3>
+          <!-- titulo de cada fot -->
+        </div>
+        <!-- item 5 -->
+        <div class="cont">
+          <!-- contenedor de cada foto -->
+          <a href="./html/menu.html"
+            ><img src="./img/pizza/580b57fcd9996e24bc43c1e0.png" alt=""
+          /></a>
+          <h3>menú</h3>
+          <!-- titulo de cada fot -->
+        </div>
+        <!-- item 6 -->
+        <div class="cont">
+          <!-- contenedor de cada foto -->
+          <a href="./html/entradas.html"
+            ><img src="./img/pizza/580b57fcd9996e24bc43c1e0.png" alt=""
+          /></a>
+          <h3>Entradas</h3>
+          <!-- titulo de cada fot -->
+        </div>
       </div>
     </div>
-  </div>
-</body>
-
+    <nav>
+      <div class="barra">
+        <!--barra de navegacion-->
+        <ul>
+          <!--icono casa-->
+          <li class="svg"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+          </svg></li>
+        </ul>
+      </div>
+    </nav>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

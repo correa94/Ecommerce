@@ -163,11 +163,11 @@ button {
   width: 50%;
   height: 400px;
 }
-@media (max-width:467px) {
-    .padre2{
-        width: 100%;
-        height: auto;
-    }
+@media (max-width: 467px) {
+  .padre2 {
+    width: 100%;
+    height: auto;
+  }
 }
 .padre2 .contenido {
   display: grid;
@@ -181,18 +181,18 @@ button {
   text-align: center;
   margin: 15px 0;
 }
-@media (max-width: 467px){
-    .padre2 .contenido {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 13px;
-        grid-row-gap: 13px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 15px 0;
-      } 
+@media (max-width: 467px) {
+  .padre2 .contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 13px;
+    grid-row-gap: 13px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+  }
 }
 .padre2 .contenido .contenido-2 {
   display: flex;
@@ -208,8 +208,8 @@ button {
   font-size: 15px;
 }
 
-.padre2 .contenido h3 span p{
-    font-weight: 100;
+.padre2 .contenido h3 span p {
+  font-weight: 100;
 }
 
 .padre .contenido p {
@@ -225,4 +225,22 @@ button {
     color: white;
     font-size: 10px;
   }
+}
+
+.barra {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.barra li{
+  color: black;
+  cursor: pointer;
+}
+
+.barra ul .svg{
+  color: white;
 }
