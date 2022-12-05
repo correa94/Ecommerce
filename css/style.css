@@ -267,20 +267,17 @@ button {
   }
 }
 
-.barra {
+nav {
   background-color: transparent;
   width: 100%;
   display: flex;
   justify-content: center;
   position: fixed;
   bottom: 0;
+  text-decoration: none !important;
 }
-
-.barra li{
-  color: black;
-  cursor: pointer;
-}
-
-.barra ul .svg{
+.br ul li{
+  text-align: center;
+  text-decoration: none !important;
   color: white;
 }
