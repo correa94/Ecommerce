@@ -26,15 +26,6 @@ h1 {
   margin: 0;
 }
 
-button {
-  width: 100px;
-  height: 100px;
-  border: 1px solid white;
-  background-color: white;
-  color: black;
-  border-radius: 50px;
-}
-
 /*logo*/
 .logo {
   display: flex;
@@ -280,4 +271,22 @@ nav {
   text-align: center;
   text-decoration: none !important;
   color: white;
+}
+
+.boton{
+position: absolute;
+top: 25px;
+left: 25px;
+}
+
+.boton .btn{
+border-radius: none;
+background-color: transparent;
+border: none;
+color: white;
+cursor: pointer;
+}
+
+.boton .btn :hover{
+color: lightblue;
 }
